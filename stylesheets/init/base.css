@@ -58,6 +58,16 @@ img,
 fieldset {
   border: 0 none;
 }
+
+select {
+  border: none;
+  border-radius: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 /* margin, padding */
 .mt10 {
   margin-top: 10px !important;
