@@ -32,53 +32,61 @@
 
     <header>
       <!-- 검색바 -->
-      <div class="search-wrap">
-        <h1>
-          <div class="logo">
-            <a href="https://www.coupang.com" title="Coupang" target="_blank" rel="noopener"><span>Coupang</span></a>
-          </div>
-        </h1>
-
-        <!-- 카테고리바 -->
-        <div class="search-bar">
-          <div class="category">
-            <button class="button-category">카테고리</button>
-          </div>
-          <div class="search-wrap">
-            <form action="" class="search">
-              <div class="all-box">
-                <label for="all">전체</label>
-                <select name="" id="all">
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                </select>
-              </div>
-              <div class="all-ico-area">
-                <img src="" alt="" class="all-ico">
-              </div>
-              <label for="search-input">
-                <input type="search" id="search-input" placeholder="찾고 싶은 상품을 검색해 보세요!"></label>
-              <button class="search-mic-img"></button>
-              <button class="search-keyword-img" aria-label="검색"></button>
-            </form>
-            <div class="myCoupang">
-              <div class="my">마이쿠팡</div>
-              <div class="cart">
-                <button class="cart-btn">장바구니</button>
-                <span class="num">0</span>
-              </div>
+      <div class="header-wrap">
+        <div class="header-title">
+          <h1>
+            <div class="logo">
+              <a href="https://www.coupang.com" title="Coupang" target="_blank" rel="noopener"><span>Coupang</span></a>
             </div>
+          </h1>
+        </div>
+        <!-- 카테고리 전체바 -->
+        <!-- <div class="search-bar"> -->
+
+        <div class="category">
+          <button class="button-category"><span>카테고리</span></button>
+        </div>
+
+        <!-- <div class="search-wrap"> -->
+        <div class="search-box">
+          <form action="" class="search">
+            <div class="all-box">
+              <label for="all">서치</label>
+              <select name="" id="all">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+            </div>
+            <div class="all-ico-area">
+              <img src="" alt="" class="all-ico">
+            </div>
+            <label for="search-input">
+              <!-- <input type="search" id="search-input" placeholder="찾고 싶은 상품을 검색해 보세요!"></label> -->
+              <input type="search" id="search-input"></label>
+            <button class="search-mic-img"></button>
+            <button class="search-keyword-img" aria-label="검색"></button>
+          </form>
+        </div>
+
+        <div class="myCoupang">
+          <div class="my">마이쿠팡</div>
+          <div class="cart">
+            <button class="cart-btn">장바구니</button>
+            <span class="num">0</span>
           </div>
         </div>
-        <!-- //카테고리바 -->
+        <!-- </div> -->
+
+        <!-- </div> -->
+        <!-- //카테고리 전체바 -->
 
         <!-- 링크바 -->
         <div class="link-bar">
           <ul>
-            <li><a href="/"><img src="./assets/icon/icon-rocket.svg" alt="로켓배송 이미지"></a>로켓배송</li>
-            <li><a href="/"><img src="./assets/icon/icon-fresh.svg" alt="로켓프레시 이미지"></a>로켓프레시</li>
-            <li><a href="/"><img src="./assets/icon/new.svg" alt="뉴 이미지"></a>2022년 설날</li>
+            <li><a href="/"><img class="link-bar-img" src="./assets/icon/icon-rocket.svg" alt="로켓배송 이미지"></a>로켓배송</li>
+            <li><a href="/"><img class="link-bar-img" src="./assets/icon/icon-fresh.svg" alt="로켓프레시 이미지"></a>로켓프레시</li>
+            <li><a href="/"><img class="link-bar-img" src="./assets/icon/new.svg" alt="뉴 이미지"></a>2022년 설날</li>
             <li><a href="/"></a>로켓직구</li>
             <li><a href="/"></a>골드박스</li>
             <li><a href="/"></a>정기배송</li>
@@ -89,10 +97,10 @@
         </div>
         <!-- //링크바 -->
 
+        <!-- //검색바 -->
       </div>
-      <!-- //검색바 -->
     </header>
-    <!-- //헤더 -->
+  <!-- //헤더 -->
 
   </div>
 </body>

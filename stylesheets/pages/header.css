@@ -1,21 +1,13 @@
 /* 헤더 */
-body {
 
-  width: 100%;
-  padding: 0;
-  margin: 0 auto;
-  /* width: 1920px;
-  height: 3000px; */
-}
 
 .container {
   outline: 1px solid black;
   margin: 0 auto;
   width: 1020px;
   height: 150px;
-  flex-shrink: 0;
   position: relative;
-
+  z-index: 1;
 }
 
 .login-bar ul {
@@ -23,8 +15,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1020px;
+  width: 100%;
   height: 34px;
+  padding-left: 4px;
 
   display: flex;
   align-items: center;
@@ -42,10 +35,6 @@ body {
 
   font-family: "Noto Sans";
   font-size: 12px;
-}
-
-.login-bar li a {
-  padding: 3px 8px;
 }
 
 .login-bar li:nth-child(1) {
@@ -72,122 +61,180 @@ body {
   margin-right: 226px;
 }
 
-header {
-  /* z-index: 10; */
-}
+
 
 /* 검색바 */
+
+/*
+ ?grid-area 로 지정된 자식들의 부모가 grid로 
+ 되야 grid가 먹히는 이유는??
+*/
+/* .header-wrap,
+.header-title,
+h1,
+.search-bar,
 .search-wrap {
-  /* width: 100%;
-  height: 0px; */
-
-
   display: grid;
-  grid-template-columns: 1fr 1fr 3fr 1fr;
-  grid-template-rows: 34px 1fr 32px;
+
+} */
+
+ 
+header {
+  outline: 1px solid rgb(0, 98, 255);
+  position: relative;
+
+
+}
+
+
+.header-wrap {
+  outline: 1px solid rgb(222, 63, 14);
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+
+  
+  /* height: 115px; */
+  padding-top: 34px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr 1fr;
+  grid-template-rows: 2fr 1fr;
   grid-template-areas:
     "category logo  search   cart"
     "category link-bar link-bar cart";
 
+
 }
 
+/* 카테고리 */
 .category {
-  outline: 1px solid rgb(205, 93, 52);
+  outline: 1px solid rgb(103, 0, 0);
 
   grid-area: category;
+  display: flex;
+  align-items: center;
 
-
-  margin-top: 34px;
   width: 110px;
   background: var(--color-blue-600);
   padding: 30px 32.5px;
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* position: absolute;
-  top: 0;
-  left: 0; */
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 4;
 
+
+  
 }
 
 .category .button-category {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
   background: url(../../assets/icon/hamburger.svg);
   width: 30px;
   height: 30px;
   margin-bottom: 30px;
+}
 
-
-
+.button-category span {
+  color: var(--Grayscale-white-white, #FFF);
+  font-family: "Noto Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 45px;
+  height: 14px;
 }
 
 
 
-.logo {
+/* 로고 */
+.header-title {
   outline: 1px solid rgb(204, 8, 116);
+  background-color: rgb(204, 8, 116);
 
-  margin-top: 34px;
+
+  margin: 34px 30px 0 0;
   grid-area: logo;
-
   width: 176px;
   height: 40px;
+
+
   background-image: url(../../assets/logo/logo.svg);
 
-  grid-column: 2/3;
-  grid-row: 2/2;
+  
 
 
 }
 
-.logo span {
-  /* position: absolute; */
-  /* clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden; */
-}
-
-.search {
-  outline: 1px solid rgb(205, 93, 52);
+/* 서치 */
+.search-box {
+  outline: 1px solid rgb(0, 122, 61);
+  background-color: rgb(0, 122, 61);
+  color: white;
 
   grid-area: search;
 
+  
+
+
 }
 
+/* 마이쿠팡 */
 .myCoupang {
-  outline: 1px solid rgb(205, 93, 52);
-
+  outline: 1px solid rgb(13, 5, 2);
+  background-color: rgb(13, 5, 2);
   grid-area: cart;
 
+  
+
+
 }
 
+
+/* 링크바 */
 .link-bar {
+  outline: 1px solid coral;
+  background-color: coral;
   grid-area: link-bar;
 
+  
 
 }
 
+.link-bar ul {
+
+  display: flex;
+  align-items: center;
+  width: 755px;
+  height: 26px;
+  font-size: 12px;
+  position: relative;
+}
+
+
+.link-bar ul li:not(:nth-of-type(7)),
+.link-bar ul li:not(:nth-of-type(8)) {
+  outline: 1px solid black;
+  padding: 6px 14px;
+}
+
+.link-bar ul li a img:not(:nth-of-type(3)) {
+  margin-right: 4px;
+}
+
+.link-bar-img:nth-child(3) {
+  margin-left: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 108px;
+  height: 26px;
+
+}
 
 
 
 
 .search-category {
-  /* outline: 1px solid rgb(11, 139, 21);
-  width: 110px;
-  height: 116px;
-  position: absolute;
-  top: 35px;
-  left: 0; */
+
+
 
   background-image: url(../../assets/icon/hamburger.svg);
-
-
 
 
 
