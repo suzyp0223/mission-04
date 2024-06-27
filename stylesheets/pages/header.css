@@ -78,7 +78,7 @@ h1,
 
 } */
 
- 
+
 header {
   outline: 1px solid rgb(0, 98, 255);
   position: relative;
@@ -93,7 +93,7 @@ header {
   top: 0;
   left: 0; */
 
-  
+
   /* height: 115px; */
   padding-top: 34px;
   display: grid;
@@ -112,32 +112,31 @@ header {
 
   grid-area: category;
   display: flex;
+  text-align: center;
   align-items: center;
-
+  flex-direction: column;
   width: 110px;
   background: var(--color-blue-600);
   padding: 30px 32.5px;
-
-
-  
 }
 
 .category .button-category {
   background: url(../../assets/icon/hamburger.svg);
   width: 30px;
   height: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 
-.button-category span {
+.category span {
   color: var(--Grayscale-white-white, #FFF);
   font-family: "Noto Sans";
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
   width: 45px;
   height: 14px;
+  letter-spacing: -1.3px;
+  display: inline-block;
+  text-align: center;
 }
 
 
@@ -145,100 +144,104 @@ header {
 /* 로고 */
 .header-title {
   outline: 1px solid rgb(204, 8, 116);
-  background-color: rgb(204, 8, 116);
 
-
-  margin: 34px 30px 0 0;
+  margin: 27px 30px 10px 37px;
   grid-area: logo;
   width: 176px;
   height: 40px;
-
-
   background-image: url(../../assets/logo/logo.svg);
-
-  
-
-
 }
 
-/* 서치 */
-.search-box {
-  outline: 1px solid rgb(0, 122, 61);
-  background-color: rgb(0, 122, 61);
-  color: white;
-
-  grid-area: search;
-
-  
-
-
-}
-
-/* 마이쿠팡 */
-.myCoupang {
-  outline: 1px solid rgb(13, 5, 2);
-  background-color: rgb(13, 5, 2);
-  grid-area: cart;
-
-  
-
-
-}
-
-
-/* 링크바 */
-.link-bar {
-  outline: 1px solid coral;
-  background-color: coral;
-  grid-area: link-bar;
-
-  
-
-}
-
-.link-bar ul {
-
-  display: flex;
-  align-items: center;
-  width: 755px;
-  height: 26px;
-  font-size: 12px;
-  position: relative;
-}
-
-
-.link-bar ul li:not(:nth-of-type(7)),
-.link-bar ul li:not(:nth-of-type(8)) {
-  outline: 1px solid black;
-  padding: 6px 14px;
-}
-
-.link-bar ul li a img:not(:nth-of-type(3)) {
-  margin-right: 4px;
-}
-
-.link-bar-img:nth-child(3) {
-  margin-left: 4px;
+.header-title span {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 108px;
-  height: 26px;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  /* margin: -1px; */
+  overflow: hidden;
 
 }
 
 
 
+  /* 서치 */
+  .search-box {
+    outline: 1px solid rgb(0, 122, 61);
+    background-color: rgb(0, 122, 61);
+    color: white;
 
-.search-category {
-
-
-
-  background-image: url(../../assets/icon/hamburger.svg);
-
-
-
+    grid-area: search;
 
 
 
-}
+
+  }
+
+  /* 마이쿠팡 */
+  .myCoupang {
+    outline: 1px solid rgb(13, 5, 2);
+    background-color: rgb(13, 5, 2);
+    grid-area: cart;
+
+
+
+
+  }
+
+
+  /* 링크바 */
+  .link-bar {
+    outline: 1px solid coral;
+    background-color: coral;
+    grid-area: link-bar;
+
+
+
+  }
+
+  .link-bar ul {
+
+    display: flex;
+    align-items: center;
+    width: 755px;
+    height: 26px;
+    font-size: 12px;
+    position: relative;
+  }
+
+
+  .link-bar ul li:not(:nth-of-type(7)),
+  .link-bar ul li:not(:nth-of-type(8)) {
+    outline: 1px solid black;
+    padding: 6px 14px;
+  }
+
+  .link-bar ul li a img:not(:nth-of-type(3)) {
+    margin-right: 4px;
+  }
+
+  .link-bar-img:nth-child(3) {
+    margin-left: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 108px;
+    height: 26px;
+
+  }
+
+
+
+
+  .search-category {
+
+
+
+    background-image: url(../../assets/icon/hamburger.svg);
+
+
+
+
+
+
+  }
