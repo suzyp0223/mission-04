@@ -7,7 +7,7 @@
   width: 1020px;
   height: 150px;
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .login-bar ul {
@@ -140,7 +140,6 @@ header {
 }
 
 
-
 /* 로고 */
 .header-title {
   outline: 1px solid rgb(204, 8, 116);
@@ -157,91 +156,150 @@ header {
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
-  /* margin: -1px; */
   overflow: hidden;
+
+}
+
+/* 서치 */
+.search-box {
+  outline: 1px solid rgb(0, 122, 61);
+  color: white;
+
+  grid-area: search;
+  width: 516px;
+  height: 40px;
+  position: relative;
+}
+
+.all-box {
+  display: inline;
+}
+
+.all-box select {
+  width: 135px;
+  height: 40px;
+  appearance: none;
+
+  background: url(../../assets/icon/IconMoreDown.svg) no-repeat right;
+  border-right: 1px solid var(--color-gray-100);
+  color: var(--color-gray-700);
+
+  font-family: "Noto Sans";
+  font-size: 12px;
+  font-style: normal;
+  padding: 13px 12px;
+
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+
+.search-box input {
+  width: 301px;
+  height: 40px;
+  color: var(--color-gray-600);
+  font-family: "Noto Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  padding: 13px 12px;
+  position: absolute;
+  top: 0px;
+  left: 135px;
+}
+
+.search-mic-img {
+  width: 40px;
+  height: 40px;
+  background: url(../../assets/icon/mic.svg) no-repeat center;
+  position: absolute;
+  right: 41px;
+}
+
+.search-keyword-img {
+  width: 40px;
+  height: 40px;
+  background: url(../../assets/icon/search.svg) no-repeat center;
+  position: absolute;
+  right: 0px;
+}
+
+
+
+
+/* 마이쿠팡 */
+.myCoupang {
+  outline: 1px solid rgb(13, 5, 2);
+  grid-area: cart;
+  
+
+
 
 }
 
 
 
-  /* 서치 */
-  .search-box {
-    outline: 1px solid rgb(0, 122, 61);
-    background-color: rgb(0, 122, 61);
-    color: white;
-
-    grid-area: search;
-
-
-
-
-  }
-
-  /* 마이쿠팡 */
-  .myCoupang {
-    outline: 1px solid rgb(13, 5, 2);
-    background-color: rgb(13, 5, 2);
-    grid-area: cart;
-
-
-
-
-  }
-
-
-  /* 링크바 */
-  .link-bar {
-    outline: 1px solid coral;
-    background-color: coral;
-    grid-area: link-bar;
-
-
-
-  }
-
-  .link-bar ul {
-
-    display: flex;
-    align-items: center;
-    width: 755px;
-    height: 26px;
-    font-size: 12px;
-    position: relative;
-  }
-
-
-  .link-bar ul li:not(:nth-of-type(7)),
-  .link-bar ul li:not(:nth-of-type(8)) {
-    outline: 1px solid black;
-    padding: 6px 14px;
-  }
-
-  .link-bar ul li a img:not(:nth-of-type(3)) {
-    margin-right: 4px;
-  }
-
-  .link-bar-img:nth-child(3) {
-    margin-left: 4px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 108px;
-    height: 26px;
-
-  }
-
-
-
-
-  .search-category {
-
-
-
-    background-image: url(../../assets/icon/hamburger.svg);
 
 
 
 
 
 
-  }
+
+/* 링크바 */
+.link-bar {
+  outline: 1px solid coral;
+  background-color: coral;
+  grid-area: link-bar;
+
+
+
+}
+
+.link-bar ul {
+
+  display: flex;
+  align-items: center;
+  width: 755px;
+  height: 26px;
+  font-size: 12px;
+  position: relative;
+}
+
+
+.link-bar ul li:not(:nth-of-type(7)),
+.link-bar ul li:not(:nth-of-type(8)) {
+  outline: 1px solid black;
+  padding: 6px 14px;
+}
+
+.link-bar ul li a img:not(:nth-of-type(3)) {
+  margin-right: 4px;
+}
+
+.link-bar-img:nth-child(3) {
+  margin-left: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 108px;
+  height: 26px;
+
+}
+
+
+
+
+.search-category {
+
+
+
+  background-image: url(../../assets/icon/hamburger.svg);
+
+
+
+
+
+
+}
