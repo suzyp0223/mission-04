@@ -35,3 +35,4 @@ function addEmpty(e){
 function removeEmpty(e){
   setTimeout(() => cart.classList.remove('cart--empty'));
 }
+

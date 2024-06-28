@@ -6,6 +6,7 @@
   position: relative;
 }
 
+/* 로그인바 */
 .login-bar ul {
   content: '';
   position: absolute;
@@ -56,27 +57,10 @@
 }
 
 
-
 /* 검색바 */
-
-/*
- ?grid-area 로 지정된 자식들의 부모가 grid로 
- 되야 grid가 먹히는 이유는??
-*/
-/* .header-wrap,
-.header-title,
-h1,
-.search-bar,
-.search-wrap {
-  display: grid;
-
-} */
-
-
 header {
   position: relative;
 }
-
 
 .header-wrap {
   height: 115px;
@@ -91,7 +75,6 @@ header {
 
 /* 카테고리 */
 .category {
-
   grid-area: category;
   display: flex;
   text-align: center;
@@ -138,13 +121,11 @@ header {
   width: 1px;
   height: 1px;
   overflow: hidden;
-
 }
 
 /* 서치 */
 .search-box {
   color: white;
-
   grid-area: search;
   width: 516px;
   height: 40px;
@@ -158,8 +139,6 @@ header {
 .all-box select {
   width: 135px;
   height: 40px;
-
-
   background: url(../../assets/icon/IconMoreDown.svg) no-repeat right;
   border-right: 1px solid var(--color-gray-100);
   color: var(--color-gray-700);
@@ -170,9 +149,6 @@ header {
   position: absolute;
   bottom: 0px;
   left: 0;
-
-
-
 }
 
 .search-box {
@@ -224,7 +200,6 @@ select:focus {
   grid-area: myCoupang;
   height: 115px;
   padding-left: 15px;
-
   font-family: "Noto Sans";
   font-size: 12px;
   font-style: normal;
@@ -236,7 +211,6 @@ select:focus {
   background: url(../../assets/icon/my-coupang.svg) no-repeat center;
   width: 81px;
   height: 73px;
-
   display: inline-flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -252,15 +226,14 @@ select:focus {
   align-items: center;
   justify-content: space-evenly;
   background: url(../../assets/icon/Union.svg) no-repeat center;
-
-  /* 장바구니 메시지 가림 */
-  display: none;
   filter: invert(0%) sepia(600%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
   border: 1px solid var(--color-gray-500);
+
+  /* 숨김처리--js잘모르겠어요.. */
+  visibility: hidden;
 }
 
 .myCoupang ul li {
-  /* color: var(--black, #181818); */
   text-align: center;
 }
 
@@ -273,6 +246,7 @@ select:focus {
   width: 45px;
   height: 58px;
   margin-left: -14px;
+  cursor: pointer;
 }
 
 .cart button {
@@ -287,7 +261,6 @@ select:focus {
   font-weight: 400;
   line-height: 150%;
   letter-spacing: -0.3px;
-
   position: relative;
   display: inline-flex;
   flex-direction: column;
@@ -318,29 +291,22 @@ select:focus {
   height: 99px;
   padding: 44px 46px 36px 47px;
   margin-top: 40px;
-
   color: var(--color-black);
   background: url(../../assets/icon/txt-box.svg) no-repeat;
-
   font-family: "Noto Sans";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-
-  /* 장바구니 메시지 가림 */
-  display: none;
-
+  cursor: pointer;
   position: absolute;
   top: 79px;
   right: 14px;
   letter-spacing: -1.2px;
+
+  /* 숨김처리--js잘모르겠어요.. */
+  /* visibility: hidden; */
 }
-
-
-
-
-
 
 
 /* 링크바 */
@@ -351,30 +317,19 @@ select:focus {
   width: 812px;
 }
 
-
 .link-bar ul {
-
-  /* display: flex; */
   align-items: center;
-
-  /* width: 102px; */
-  /* height: 26px; */
-  /* position: relative; */
   display: inline-block;
-
   font-family: "Noto Sans";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
-
 }
 
 .link-bar li {
-  /* outline: 1px solid black; */
   display: inline;
 }
-
 
 .link-bar a {
   padding: 8px 13px;
@@ -383,20 +338,4 @@ select:focus {
 
 .link-bar img {
   margin: 6px 0;
-}
-
-
-
-
-.search-category {
-
-
-
-  background-image: url(../../assets/icon/hamburger.svg);
-
-
-
-
-
-
 }
