@@ -113,6 +113,10 @@ header {
   width: 176px;
   height: 40px;
   background-image: url(../../assets/logo/logo.svg);
+  z-index: 100;
+}
+.header-title a {
+  padding: 20px 93px;
 }
 
 .header-title span {
