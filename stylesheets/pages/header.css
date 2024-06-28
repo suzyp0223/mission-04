@@ -305,7 +305,7 @@ select:focus {
   letter-spacing: -1.2px;
 
   /* 숨김처리--js잘모르겠어요.. */
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 
