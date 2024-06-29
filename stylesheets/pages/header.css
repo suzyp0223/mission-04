@@ -121,14 +121,6 @@ header {
   position: relative;
 }
 
-.header-title span {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
 /* 서치 */
 .search-box {
   color: white;
