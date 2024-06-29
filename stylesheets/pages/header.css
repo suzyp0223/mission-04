@@ -87,7 +87,7 @@ header {
 }
 
 .category .button-category {
-  background: url(../../assets/icon/hamburger.svg);
+  background: url(/assets/icon/hamburger.svg);
   width: 30px;
   height: 30px;
   margin-bottom: 12px;
@@ -112,9 +112,10 @@ header {
   grid-area: logo;
   width: 176px;
   height: 40px;
-  background-image: url(../../assets/logo/logo.svg);
+  background-image: url(/assets/logo/logo.svg);
   z-index: 100;
 }
+
 .header-title a {
   padding: 20px 93px;
   position: relative;
@@ -144,7 +145,7 @@ header {
 .all-box select {
   width: 135px;
   height: 40px;
-  background: url(../../assets/icon/IconMoreDown.svg) no-repeat right;
+  background: url(/assets/icon/IconMoreDown.svg) no-repeat right;
   border-right: 1px solid var(--color-gray-100);
   color: var(--color-gray-700);
   font-family: "Noto Sans";
@@ -187,7 +188,7 @@ select:focus {
 .search-mic-img {
   width: 40px;
   height: 40px;
-  background: url(../../assets/icon/mic.svg) no-repeat center;
+  background: url(/assets/icon/mic.svg) no-repeat center;
   position: absolute;
   right: 41px;
 }
@@ -195,7 +196,7 @@ select:focus {
 .search-keyword-img {
   width: 40px;
   height: 40px;
-  background: url(../../assets/icon/search.svg) no-repeat center;
+  background: url(/assets/icon/search.svg) no-repeat center;
   position: absolute;
   right: 0px;
 }
@@ -213,7 +214,7 @@ select:focus {
 }
 
 .myCoupang button {
-  background: url(../../assets/icon/my-coupang.svg) no-repeat center;
+  background: url(/assets/icon/my-coupang.svg) no-repeat center;
   width: 81px;
   height: 73px;
   display: inline-flex;
@@ -230,16 +231,26 @@ select:focus {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background: url(../../assets/icon/Union.svg) no-repeat center;
+  background: url(/assets/icon/Union.svg) no-repeat center;
   filter: invert(0%) sepia(600%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
   border: 1px solid var(--color-gray-500);
 
-  /* 숨김처리--js잘모르겠어요.. */
-  visibility: hidden;
+  /* !!!
+  is--active 클래스 추가후 어떻게 하는지
+  요 잘 모르겠어서 투명도와 호버로 조정했습니다.*/
+  opacity: 0;
+}
+
+.myCoupang button:hover ul {
+  /* !!!
+    is--active 클래스 추가후 어떻게 하는지
+    요 잘 모르겠어서 투명도와 호버로 조정했습니다.*/
+  opacity: 1;
 }
 
 .myCoupang ul li {
   text-align: center;
+  /* display: block; */
 }
 
 .myCoupang ul li a {
@@ -255,7 +266,7 @@ select:focus {
 }
 
 .cart button {
-  background: url(../../assets/icon/cart.svg) no-repeat center;
+  background: url(/assets/icon/cart.svg) no-repeat center;
   margin-top: 10px;
   width: 57px;
   height: 64px;
@@ -297,7 +308,7 @@ select:focus {
   padding: 44px 46px 36px 47px;
   margin-top: 40px;
   color: var(--color-black);
-  background: url(../../assets/icon/txt-box.svg) no-repeat;
+  background: url(/assets/icon/txt-box.svg) no-repeat;
   font-family: "Noto Sans";
   font-size: 14px;
   font-style: normal;
@@ -309,8 +320,18 @@ select:focus {
   right: 14px;
   letter-spacing: -1.2px;
 
-  /* 숨김처리--js잘모르겠어요.. */
-  visibility: hidden;
+  /* !!!
+  cart--empty 클래스 추가후 어떻게 하는지
+  요 잘 모르겠어서 투명도와 호버로 조정했습니다.*/
+  opacity: 0;
+}
+
+.cart:hover .cart-txt {
+
+  /* !!!
+    cart--empty 클래스 추가후 어떻게 하는지
+    요 잘 모르겠어서 투명도와 호버로 조정했습니다.*/
+  opacity: 1;
 }
 
 

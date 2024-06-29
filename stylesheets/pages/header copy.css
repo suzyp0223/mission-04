@@ -112,7 +112,7 @@ header {
   /* position: absolute;
   top: 0;
   left: 0; */
-  background: url(../../assets/icon/hamburger.svg);
+  background: url(/assets/icon/hamburger.svg);
   width: 30px;
   height: 30px;
   margin-bottom: 30px;
@@ -154,7 +154,7 @@ h1,
 
   width: 176px;
   height: 40px;
-  background-image: url(../../assets/logo/logo.svg);
+  background-image: url(/assets/logo/logo.svg);
 
   grid-column: 2/3;
 
@@ -214,7 +214,7 @@ h1,
   top: 35px;
   left: 0; */
 
-  background-image: url(../../assets/icon/hamburger.svg);
+  background-image: url(/assets/icon/hamburger.svg);
 
 
 
